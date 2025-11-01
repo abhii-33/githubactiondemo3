@@ -19,14 +19,11 @@ jobs:
       - name: show python version
         run: python --version     
 
-      - name: Run extract.py
-        run: python extract.py
-
-      - name: Install dependencies
-        run: pip install -r requirements.txt
+      - name: Install required depencies
+        run: pip install pandas
 
       - name: Run extract.py
-        run: python extract.py
+        run: python extract.py        
 
 
   transform-data-job:
